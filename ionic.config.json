@@ -1,6 +1,6 @@
 {
   "name": "18-safar",
-  "app_id": "",
+  "app_id": "sn.dialibah.18-safar",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
