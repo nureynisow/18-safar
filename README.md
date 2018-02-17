@@ -1,2 +1,2 @@
 # 18-safar
-ionic app for muslim/muriid stuff - Trello coming soon
+open source ionic app for muslim/muriid stuff - Trello coming soon
