@@ -1,8 +1,46 @@
 {
   "rules": {
-    "no-duplicate-variable": true,
-    "no-unused-variable": [
-      true
+    "no-any": false,
+    "cyclomatic-complexity": [true, 20],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ],
+    "array-type": [true, "array"],
+    "class-name": true,
+    "prefer-const": true,
+    "no-conditional-assignment": true,
+    "semicolon": [true, "always"],
+    "no-shadowed-variable": true,
+    "triple-equals": [true, "allow-undefined-check", "allow-null-check"],
+    "directive-selector": [true, "attribute", ["n9", "kiss", "april", "gps"], "camelCase"],
+    "component-selector": [true, "element", ["n9", "kiss", "april", "gps"], "kebab-case"],
+    "use-input-property-decorator": true,
+    "use-output-property-decorator": true,
+    "use-host-property-decorator": true,
+    "component-class-suffix": [true, "Component"],
+    "directive-class-suffix": [true, "Directive"],
+    "use-life-cycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "no-input-rename": true,
+    "no-output-rename": true,
+    "no-forward-ref": false,
+    "quotemark": [true, "single", "avoid-escape"],
+    "no-unused-variable": true,
+    "no-access-missing-member": true,
+    "invoke-injectable": true,
+    "no-attribute-parameter-decorator": true,
+    "no-console": [
+      true,
+      "log",
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
     ]
   },
   "rulesDirectory": [

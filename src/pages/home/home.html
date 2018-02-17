@@ -1,17 +1,70 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>
+			<div class="date-hegirien">Date du jour hegirien</div>
+			<div class="date-gregorien">Date du jour gregorien</div>
+		</ion-title>
+		<ion-buttons end>
+			<button ion-button color="primary">
+				<ion-icon name="settings"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+	<div class="main-card">
+		<img src="assets/imgs/Touba.jpg"/>
+		<div class="main-card-title">
+			<table>
+				<tr>
+					<td>
+						<ion-icon name="ios-time-outline"></ion-icon>
+					</td>
+					<td>
+						<b>Prochaine prière</b><br>
+						<i>Touba</i>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="main-card-option">
+			<ion-icon name="ios-share-outline"></ion-icon>
+		</div>
+		<div class="main-card-see-all">VOIR TOUT</div>
+		<div class="main-card-center">
+			<div class="main-card-center-hour">12:00</div>
+			<div style="text-align: center; font-weight: 600"> Dohr</div>
+		</div>
+	</div>
+	<magal-features></magal-features>
+	<ion-card class="daily">
+		<ion-card-header color="light">Dars du jour</ion-card-header>
+		<img src="assets/imgs/nature.jpg">
+		<div class="daily-content">
+			<div class="daily-title">TAZAWUDUS - SIXAAR</div>
+			<div class="daily-subtitle">Leçons 28</div>
+		</div>
+		<ion-row>
+			<ion-col>
+				<button ion-button icon-left clear small>
+					<ion-icon name="thumbs-up"></ion-icon>
+					<div>12 j'aimes</div>
+				</button>
+			</ion-col>
+			<ion-col>
+				<button ion-button icon-left clear small>
+					<ion-icon name="text"></ion-icon>
+					<div>4 commentaires</div>
+				</button>
+			</ion-col>
+			<ion-col>
+				<button ion-button icon-left clear small>
+					<ion-icon name="share-alt"></ion-icon>
+					<div>Partager</div>
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-card>
+	<!--<div style="font-size: 22px; text-align: center">Welcome to <span style="font-weight: bold">My 18 Safar !</span></div>-->
 </ion-content>

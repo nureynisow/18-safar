@@ -1,3 +1,80 @@
 page-home {
-
+	font-weight: lighter;
+	font-family: Helvetica;
+	.date {
+		&-hegirien {
+			color: color($colors, primary);
+		}
+		&-gregorien {
+			font-size: 10px;
+			font-weight: lighter;
+		}
+	}
+	.main-card {
+		position: relative;
+		&-option {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 10px;
+			ion-icon {
+				font-size: 2em;
+			}
+		}
+		&-see-all {
+			position: absolute;
+			font-weight: bolder;
+			bottom: 0;
+			right: 0;
+			padding: 10px;
+		}
+		&-title {
+			position: absolute;
+			top: 0;
+			text-shadow: 1px 0 3px rgba(0, 0, 0, 0.94);
+			td {
+				padding: 5px;
+			}
+			ion-icon {
+				font-size: 3em;
+			}
+		}
+		&-center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			&-hour {
+				font-size: 92px;
+				opacity: 0.85;
+			}
+			font-size: 16px;
+		}
+		text-shadow: 1px 0 3px rgba(0, 0, 0, 0.94);
+	}
+	.daily {
+		position: relative;
+		&-content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			text-align: center;
+		}
+		&-title {
+			font-size: 22px;
+			font-weight: 600;
+		}
+		ion-row {
+			display: flex;
+			justify-content: space-around;
+			ion-col {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
 }
